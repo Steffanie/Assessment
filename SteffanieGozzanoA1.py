@@ -64,7 +64,6 @@ def list_items(items):
         else:
             print(count, "-","{:<12}".format(item[0]),"{:<30} ".format("("+item[1]+")"), "= $","{:6.2f}".format(float(item[2])))
 
-
 #adds new item with details of description and cost
 def add_new_item(items):
     moreItems = []
@@ -80,6 +79,7 @@ def add_new_item(items):
                 valid = True
         except ValueError:
             print("Invalid input; enter a valid number")
+
 #adding to list
     moreItems.append(itemName)
     moreItems.append(descriptionOfItem)
@@ -87,7 +87,6 @@ def add_new_item(items):
     moreItems.append("in")
     items.append(moreItems)
     print(itemName, "(" + descriptionOfItem + "), $" + "{:6.2f} now available for hire".format(priceOfItemPerDay))
-
 
 #Removes item from availability to be hired
 def hire_an_item(items):
