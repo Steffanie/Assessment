@@ -38,12 +38,13 @@ def main():
 
 
 
-"""function loadItems()
-open “items.csv” as inFile for reading
-itemsList = empty list
-for line in inFile
-	append line to itemsList
-return itemList
+"""
+function loadItems()
+    open “items.csv” as inFile for reading
+    itemsList = empty list
+    for line in inFile
+	    append line to itemsList
+    return itemList
 """
 
 #loads file into each function
@@ -97,6 +98,28 @@ def add_new_item(items):
     items.append(moreItems)
     print(itemName, "(" + descriptionOfItem + "), $" + "{:6.2f} now available for hire".format(priceOfItemPerDay))
 
+
+
+"""
+function hireAnItem()
+    count = -1
+    for item in items
+        count = count + 1
+        if item[3] == "in"
+            display items
+        valid = False
+        while not valid
+            try
+                get itemToHire
+                if itemToHire < 0
+                    display invalid message
+                else
+                    valid = True
+            except Error Message
+                    display enterValid input
+
+
+"""
 #Removes item from availability to be hired
 def hire_an_item(items):
     count = -1
