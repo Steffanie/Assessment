@@ -36,13 +36,23 @@ def main():
     save_items(items)
     print("Have a nice day ")
 
+
+
+"""function loadItems()
+open “items.csv” as inFile for reading
+itemsList = empty list
+for line in inFile
+	append line to itemsList
+return itemList
+"""
+
 #loads file into each function
 def load_items():
     inFile = open(FILENAME, "r")
-    theList = []
+    itemsList = []
     for line in inFile:
-        theList.append(line.strip().split(","))
-    return theList
+        itemsList.append(line.strip().split(","))
+    return itemsList
 
 #saves file onto csv file
 def save_items(items):
