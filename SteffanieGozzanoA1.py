@@ -49,8 +49,8 @@ def load_items():
 def save_items(items):
     outFile = open(FILENAME, "w")
     for item in items:
-        stuff = ",".join(item)
-        outFile.write(stuff)
+        itemsAsAList = ",".join(item)
+        outFile.write(itemsAsAList)
         outFile.write("\n")
 
 #shows all the items in the file
