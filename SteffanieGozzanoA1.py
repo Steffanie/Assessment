@@ -3,7 +3,6 @@
 Hire an item program
 https://github.com/Steffanie/SteffanieGozzanoA1.git
 
-
 """
 
 MENU = """(L)ist all items
